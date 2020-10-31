@@ -1,0 +1,48 @@
+ 
+vim concat.txt
+cat command is used for concatinating multiple files:
+given below are examples
+
+ADD:
+cat > f1.txt
+Cat >> f1.txt (created in cat folder)
+
+VIEW:
+cat f1.txt (for viewing content of a file)
+
+APPEND:
+
+EXAMPLE:
+cat f1.txt >> f2.txt
+
+cat f1.txt
+hello i am a f1 file
+
+cat f2.txt
+hello i am a f1 file
+
+hello i am a f1 file
+
+COPY:
+cat f1.txt >f2.txt (f2 new file will be created if not present already) 
+
+EXAMPLE:
+cat f1.txt >f2.txt (f2 created in cat folder)
+
+cat f2.txt
+hello i am a f1 file
+
+cat f1.txt
+hello i am a f1 file
+
+Overridden occurs
+
+
+LINE NUMBER:
+cat -n f2.txt
+
+EXAMPLE:
+ 1     hello i am a f1 file
+     2	
+     3	hello i am a f1 file
+     4	
