@@ -1,0 +1,19 @@
+ vim hello.go
+(base) Tahirs-MBP:gocode tahir$ cat hello.go
+package main
+  
+import "fmt"
+
+func main() {
+  fmt.Println("Hello everyone in the world")
+  fmt.Println("we are having our lectures on sundays")
+  fmt.Println("we are enjoying it")
+}
+(base) Tahirs-MBP:gocode tahir$ go build hello.go    #(compile source code?)
+Tahirs-MBP:gocode tahir$ ./hello                     #(compiled executable file)
+
+Output:
+
+Hello everyone in the world
+we are having our lectures on sundays
+we are enjoying it
