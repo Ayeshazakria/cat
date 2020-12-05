@@ -1,0 +1,17 @@
+package main
+import (
+  "fmt"
+  "os"
+)
+func main(){
+   p,s,sep :="",""
+   for i,arg := range os.Args[0:]{
+       p += sep + i
+       s += sep + args
+       sep = " "
+}  
+    fmt.Println(p)
+    fmt.Println(s)
+}
+
+
