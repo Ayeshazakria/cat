@@ -1,6 +1,7 @@
 package main
 
 import "fmt"
+import "flag"
 
 func main(){
 
@@ -23,10 +24,13 @@ func main(){
    result = showAll(p)
 
    fmt.Println("Now the updated value of v is :" , result)
-   
+   fmt.Println(o)
+   fmt.Println(sep)   
  }
   
  func showAll(z *int) int  {
+
+
 
    fmt.Println(z)    //address of v stored in the copy of pointer p (which is passed as argument)
 
@@ -46,3 +50,7 @@ func main(){
     
     
  }
+ var o =flag.Bool("o",false,"omit new line")
+ var sep =flag.String("s", "/", "seperator")
+
+
